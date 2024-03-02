@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Baloo Bhaijaan 2', sans-serif;
+}
+*,::before,::after{
+    box-sizing: border-box;
+}
+body{
+
+    font-weight: bolder;
+    font-size: 11px;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul{
+    list-style: none;
+}
+.container{
+    max-width: 100%;
+    margin: 0 auto;
+}
+.container nav{
+    position: fixed;
+    bottom: 1%;
+    width: 94%;
+    height: 85px;
+    background-color: #0f3054;
+    left: auto;
+    margin-left: 3%;
+    padding: 0 1.5em;
+    border-radius: 40px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.site{
+    z-index: 1000;
+    position: absolute;
+}
+.container nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container nav:where(li,a){
+    position: relative;
+}
+.container nav li{
+    margin-top: 7px;
+}
+.container nav li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    padding: 7px;
+    font-size: 1.5em;
+    line-height: 1.4em;
+    width: 70px;
+    height: 70px;
+    color: #A6ACAF;
+   /* -webkit-transition:all 0.3s ease-out; */
+    transition: all 0.3s ease-out;
+}
+.container nav li a:hover,
+.container nav li a span:hover{
+    color: #1C2833;
+    border-radius: 50%;
+    background-color: #A6ACAF;
+}
+.container nav li a span{
+    font-size: 16px;
+    color: #A6ACAF;
+}
+
+
+
+
+
+
+
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .card--article{
+    width: 300px;
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+.card--image{
+    position: relative;
+    background-color: #0f3054;
+    padding-top: 1.5rem;
+    padding-left: auto;
+    margin-bottom: -.75rem;
+}
+.card--name{
+    color: aliceblue;
+    margin-top: 5px;
+    margin-bottom: 0.75erm;
+    margin-left: 7px;
+    font-size: 40px;
+    
+}
+.card--description{
+    margin-bottom: 1.75rem;
+    font-weight: 500;
+    color:aliceblue;
+}
+.card--button{
+    display: inline-block;
+    background-color: aliceblue;
+    padding: 0.5rem 7rem;
+    border-radius: 0.25rem;
+    color:#0f3054;
+    margin:auto 20px;
+    margin-bottom: 100px;
+    font-weight: 600;
+    font-size:x-large ;
+}
+h3{
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+    padding-top:10px ;
+}
+.test button{
+    width: 100%; background-color: transparent; color: #0f3054; border: 5px solid #0f3054;
+    height: 100px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 27px;
+    font-weight: bolder;
+    border-radius: 20px;
+}
+.test button i{
+    font-size: 27px;
+    font-weight: bolder;   
+}
+
+@media(max-width:280px){
+    .container nav li a{
+        padding: 10px;
+        font-size: 1.7em;
+        height: 50px;
+        width: 50px;
+    }
+    .container nav li a span{
+        font-size:10px;
+    }
+    .container nav ul{
+        margin-top: 13px;
+    }
+}
